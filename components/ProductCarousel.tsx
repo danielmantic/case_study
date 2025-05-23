@@ -50,7 +50,7 @@ export default function ProductsCarousel() {
   if (loading) return <p>Loading products...</p>;
 
   return (
-    <div className="flex flex-col mt-[100px] mb-[50px] items-center px-12"> {/* posunutie vonkajšieho obsahu */}
+    <div className="flex flex-col mt-[100px] mb-[50px] items-center px-12">
       <div className="grid grid-cols-[5%_90%_5%] w-full max-w-[1200px]">
     <div>
       <button
@@ -67,7 +67,7 @@ export default function ProductsCarousel() {
       {products.map((p) => (
         <div
           key={p.id}
-          className="min-w-[190px] h-[240px] transition cursor-pointer flex flex-col items-center justify-start text-center p-[20px] border border-transparent hover:border-[#ff4100] hover:shadow-md duration-200"
+          className="min-w-[190px] h-[240px] transition cursor-pointer flex flex-col items-center justify-start text-center p-[20px] border border-transparent"
         >
           <img
             src={p.image}

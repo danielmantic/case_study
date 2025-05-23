@@ -44,11 +44,11 @@ export default function LoginPage() {
   return (
     <div>
       <Header />
-      <div className="min-h-screen grid grid-cols-[40%_20%_40%]">
+      <div className="min-h-screen grid grid-cols-[20%_60%_20%]">
         <div></div>
         <div className="flex flex-col items-center">
           <h1 className="text-[#ff4100] text-3xl font-bold mb-10 text-center">Login</h1>
-          <form onSubmit={handleLogin} className="flex flex-col gap-6 w-full">
+          <form onSubmit={handleLogin} className="flex flex-col gap-6 w-full justify-center max-w-[220px]">
             <CustomInput
               value={username}
               handler={(e) => setUsername(e.target.value)}

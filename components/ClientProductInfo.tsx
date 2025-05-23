@@ -24,7 +24,6 @@ export default function ClientProductInfo({ product }: { product: any }) {
       <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
       <p className="text-2xl text-[#ff4100] font-semibold mb-4">${product.price}</p>
       <p className="mb-16 text-gray-700">{product.description}</p>
-
       <select
         value={size}
         onChange={(e) => setSize(e.target.value)}
