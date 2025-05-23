@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+}
+
+a {
+  text-decoration: none;
+}
