@@ -21,8 +21,8 @@ const getFlagEmoji = (countryCode: string) =>
 interface PhoneNumberInputProps {
   handler: (event: React.ChangeEvent<HTMLInputElement>) => void;
   value: string;
-  countryCode: string; // e.g. "+421"
-  onCountryChange: (code: string) => void; // now accepts just code
+  countryCode: string;
+  onCountryChange: (code: string) => void;
 }
 
 const PhoneNumberInput: React.FC<PhoneNumberInputProps> = ({

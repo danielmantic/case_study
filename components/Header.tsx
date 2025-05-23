@@ -3,15 +3,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useAuth } from "@/components/Auth";
-import { useRouter } from "next/navigation"; // ← pridaj toto
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const { user, logout } = useAuth();
-  const router = useRouter(); // ← inicializuj router
+  const router = useRouter();
 
   const handleLogout = () => {
-    logout();              // najprv odhlás používateľa
-    router.push("/");      // potom ho presmeruj na hlavnú stránku
+    logout();
+    router.push("/");
   };
 
   return (
