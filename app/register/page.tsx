@@ -86,11 +86,11 @@ export default function RegisterPage() {
   return (
     <div>
       <Header />
-      <div className="min-h-screen grid grid-cols-[40%_20%_40%]">
+      <div className="min-h-screen grid grid-cols-[20%_60%_20%]">
         <div></div>
         <div className="flex flex-col items-center">
           <h1 className="text-[#ff4100] text-3xl font-bold mb-10 text-center">Register</h1>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full justify-center max-w-[220px]">
             <CustomInput value={name} handler={(e) => setName(e.target.value)} placeholder="Name" name="name" className="mb-[20px]"/>
             <CustomInput value={surname} handler={(e) => setSurname(e.target.value)} placeholder="Surname" name="surname" className="mb-[20px]"/>
             <CustomInput value={username} handler={(e) => setUsername(e.target.value)} placeholder="Username" name="username" className="mb-[20px]"/>

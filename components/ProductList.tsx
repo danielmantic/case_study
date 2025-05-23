@@ -78,11 +78,11 @@ export default function ProductsList() {
         onCategoryChange={setSelectedCategory}
       />
 
-      <div className="flex flex-wrap gap-x-6 gap-y-4 justify-center">
+      <div className="flex flex-wrap gap-x-5 gap-y-4 justify-center m-[10px]">
         {filteredProducts.map((p) => (
           <div
             key={p.id}
-            className="w-[220px] h-[260px] transition cursor-pointer flex flex-col items-center justify-start text-center p-[20px] mb-[20px] border border-transparent hover:border-[#ff4100] hover:shadow-md duration-200"
+            className="w-[200px] h-[240px] transition cursor-pointer flex flex-col items-center justify-start text-center p-[20px] mb-[20px] border border-transparent hover:border-[#ff4100] hover:shadow-md duration-200"
           >
             <img
               src={p.image}
